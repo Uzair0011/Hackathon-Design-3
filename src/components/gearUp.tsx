@@ -93,7 +93,7 @@ export default function GearUp() {
           {data.map((Idata, index) => (
             <div key={index} className="w-full max-w-[300px] h-auto">
               {/* Image */}
-              <div className="w-full h-auto flex items-center justify-center mb-4">
+              <div className="w-full h-auto flex items-center justify-center mb-4 hover:scale-90 cursor-pointer">
                 <Image
                   src={`/${Idata.imageURL}.png`}
                   alt="logo"
@@ -115,11 +115,11 @@ export default function GearUp() {
         </div>
 
         {/* Column 2 */}
-        <div className="flex flex-wrap justify-center md:justify-start gap-6">
+        <div className="flex flex-wrap justify-center md:justify-start gap-6 ">
           {data2.map((Idata2, index) => (
             <div key={index} className="w-full max-w-[300px] h-auto  ">
               {/* Image */}
-              <div className="w-full h-auto flex items-center justify-center mb-4">
+              <div className="w-full h-auto flex items-center justify-center mb-4 hover:scale-90 cursor-pointer">
                 <Image
                   src={`/${Idata2.imageURL2}.png`}
                   alt="logo"

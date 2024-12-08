@@ -14,7 +14,10 @@ export default function Navbar() {
     <div className="w-full bg-white flex items-center justify-between px-4 sm:px-6 py-4 sm:py-6">
       {/* Logo */}
       <div>
-        <Image src="/logo.png" alt="logo" width={59} height={20} />
+        <Link href="/">
+          {" "}
+          <Image src="/logo.png" alt="logo" width={59} height={20} />
+        </Link>
       </div>
 
       {/* Navigation Menu */}
@@ -23,16 +26,16 @@ export default function Navbar() {
           <Link href="/">New & Featured</Link>
         </li>
         <li className="text-sm hover:underline">
-          <Link href="/">Men</Link>
+          <Link href="/Detail">Men</Link>
         </li>
         <li className="text-sm hover:underline">
-          <Link href="/">Women</Link>
+          <Link href="/Detail2">Women</Link>
         </li>
         <li className="text-sm hover:underline">
-          <Link href="/">Kids</Link>
+          <Link href="/Detail3">Kids</Link>
         </li>
         <li className="text-sm hover:underline">
-          <Link href="/">Sale</Link>
+          <Link href="/AllProducts">Sale</Link>
         </li>
         <li className="text-sm hover:underline">
           <Link href="/">SNKRS</Link>
@@ -55,19 +58,19 @@ export default function Navbar() {
           <Image src="/cart.png" alt="cart icon" width={24} height={24} />
         </div>
         <div className="md:hidden" onClick={toogleMenu}>
-          {isMenuOpen ? <ImCross  size={30} /> : <TiThMenu size={30} />}
+          {isMenuOpen ? <ImCross size={30} /> : <TiThMenu size={30} />}
         </div>
         {isMenuOpen && (
           <ul className="w-screen h-screen top-[70px] right-[10%] fixed z-10 p-3 rounded pl-20 pt-5 bg-white opacity-85 md:hidden">
             <li className="pb-10 pl-3 font-bold text-1xl">
               <a href="/" onClick={toogleMenu}>
-              New & Featured
+                New & Featured
               </a>
             </li>
 
             <li className="pb-10 pl-3 font-bold text-1xl">
               <a href="#About" onClick={toogleMenu}>
-              Men
+                Men
               </a>
             </li>
 
@@ -88,7 +91,7 @@ export default function Navbar() {
             </li>
             <li className="pb-10 pl-3 font-bold text-1xl">
               <a href="#Contact" onClick={toogleMenu}>
-              SNKRS
+                SNKRS
               </a>
             </li>
           </ul>

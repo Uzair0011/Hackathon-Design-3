@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 type Idata = {
   id: number;
   title: string;
@@ -58,14 +58,15 @@ export default function BestOfAirMax() {
             className="w-[280px] sm:w-[300px] md:w-[350px] flex flex-col items-center overflow-hidden mx-2 my-4"
           >
             {/* Image */}
-            <div className="w-full h-[300px] flex items-center justify-center bg-gray-100">
+            <div className="w-full h-[300px] flex items-center justify-center bg-gray-100 hover:scale-90 cursor-pointer">
+              <Link href="/Detail">
               <Image
                 src={`/${item.imageURL}.png`}
                 alt={item.title}
                 width={1000}
                 height={1000}
                 className="object-contain"
-              />
+              /></Link>
             </div>
 
             {/* Text */}

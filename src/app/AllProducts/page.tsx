@@ -197,7 +197,11 @@ export default function AllProducts() {
         <div className="flex gap-5">
           {/* 1  */}
           <div className="flex items-center gap-2 text-[16px]">
-            <div><Link href="/" className="hover:underline">Hide Filters</Link></div>
+            <div>
+              <Link href="/" className="hover:underline">
+                Hide Filters
+              </Link>
+            </div>
 
             <div className="w-[18px] h-[16px] flex ">
               <Image
@@ -211,7 +215,11 @@ export default function AllProducts() {
           </div>
           {/* 2  */}
           <div className="flex items-center gap-2">
-            <div><Link className="hover:underline" href="/">Sort By</Link></div>
+            <div>
+              <Link className="hover:underline" href="/">
+                Sort By
+              </Link>
+            </div>
 
             <div className="w-[18px] h-[16px] flex ">
               <Image
@@ -231,17 +239,39 @@ export default function AllProducts() {
         <div className="hidden sm:flex sm:flex-col w-[180px]  h-auto">
           {/* 1  */}
           <ul className="w-[180px] h-[390px]  text-[15px] font-medium flex flex-col justify-between pb-11 border-r-4 border-black rounded">
-            <li className="hover:underline cursor-pointer"><Link href="/"></Link>Shoes</li>
-            <li className="hover:underline cursor-pointer"><Link href="/"></Link>Tops & T-Shirts</li>
-            <li className="hover:underline cursor-pointer"><Link href="/"></Link>Hoodies & Sweatshirts</li>
-            <li className="hover:underline cursor-pointer"><Link href="/"></Link>Jackets</li>
-            <li className="hover:underline cursor-pointer"><Link href="/"></Link>Trousers & Tights</li>
-            <li className="hover:underline cursor-pointer"><Link href="/"></Link>Shorts</li>
-            <li className="hover:underline cursor-pointer"><Link href="/"></Link>Tracksuits</li>
-            <li className="hover:underline cursor-pointer"><Link href="/"></Link>Jumpsuits & Rompers</li>
-            <li className="hover:underline cursor-pointer"><Link href="/"></Link>Skirts & Dresses</li>
-            <li className="hover:underline cursor-pointer"><Link href="/"></Link>Socks</li>
-            <li className="hover:underline cursor-pointer"><Link href="/"></Link>Accessories & Equipment</li>
+            <li className="hover:underline cursor-pointer">
+              <Link href="/"></Link>Shoes
+            </li>
+            <li className="hover:underline cursor-pointer">
+              <Link href="/"></Link>Tops & T-Shirts
+            </li>
+            <li className="hover:underline cursor-pointer">
+              <Link href="/"></Link>Hoodies & Sweatshirts
+            </li>
+            <li className="hover:underline cursor-pointer">
+              <Link href="/"></Link>Jackets
+            </li>
+            <li className="hover:underline cursor-pointer">
+              <Link href="/"></Link>Trousers & Tights
+            </li>
+            <li className="hover:underline cursor-pointer">
+              <Link href="/"></Link>Shorts
+            </li>
+            <li className="hover:underline cursor-pointer">
+              <Link href="/"></Link>Tracksuits
+            </li>
+            <li className="hover:underline cursor-pointer">
+              <Link href="/"></Link>Jumpsuits & Rompers
+            </li>
+            <li className="hover:underline cursor-pointer">
+              <Link href="/"></Link>Skirts & Dresses
+            </li>
+            <li className="hover:underline cursor-pointer">
+              <Link href="/"></Link>Socks
+            </li>
+            <li className="hover:underline cursor-pointer">
+              <Link href="/"></Link>Accessories & Equipment
+            </li>
             <br />
             <br />
 
@@ -253,7 +283,7 @@ export default function AllProducts() {
             <div>
               <div className="flex items-center justify-between pb-5">
                 <div>Gender</div>
-                <div className="w-[15px] h-[15px]">
+                <div className="w-[15px] h-[15px] ">
                   <Image
                     src="/AA.png"
                     alt="image"
@@ -400,14 +430,16 @@ export default function AllProducts() {
                   className="w-[280px]  sm:w-[300px] md:w-[350px] flex flex-col items-center    overflow-hidden mx-2 my-4"
                 >
                   {/* Image */}
-                  <div className="w-full h-[340px] flex items-center justify-center bg-gray-100">
-                    <Image
-                      src={`/${item.imageURL}.png`}
-                      alt={item.title}
-                      width={1000}
-                      height={1000}
-                      className="object-contain"
-                    />
+                  <div className="w-full h-[340px] flex items-center justify-center bg-gray-100 hover:scale-90 cursor-pointer">
+                    <Link href="/Detail">
+                      <Image
+                        src={`/${item.imageURL}.png`}
+                        alt={item.title}
+                        width={1000}
+                        height={1000}
+                        className="object-contain"
+                      />
+                    </Link>
                   </div>
 
                   {/* Text */}
