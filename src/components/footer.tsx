@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Footer() {
   return (
-    <div className="w-full h-auto sm:h-[267px] bg-black flex items-center justify-between text-white px-6 py-5 sm:py-0 ">
+    <div id="FooterLast" className="w-full h-auto sm:h-[267px] bg-black flex items-center justify-between text-white px-6 py-5 sm:py-0 ">
       <div className="w-full  flex flex-wrap justify-between">
       <div className="w-full sm:w-[590px] h-auto flex flex-wrap justify-center sm:justify-between text-center sm:text-start">
   {/* <!-- Column 1 --> */}
