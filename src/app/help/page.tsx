@@ -180,7 +180,7 @@ const Help = () => {
         </div>
 
         {/* right side  */}
-        <div className=" w-[500px]  border-l-2">
+        <div className="w-full lg:w-[500px]  border-l-2">
           <h1 className="text-[28px] font-medium text-center">CONTACT US</h1>
           {/* mobile #  */}
           <div className="flex flex-col items-center text-center px-5 py-6">
