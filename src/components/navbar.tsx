@@ -55,8 +55,12 @@ export default function Navbar() {
           <Image src="/heart.png" alt="wishlist icon" width={24} height={24} />
         </div>
         <div>
-          <Image src="/cart.png" alt="cart icon" width={24} height={24} />
+          <Link href={"/cart"}>
+            {" "}
+            <Image src="/cart.png" alt="cart icon" width={24} height={24} />
+          </Link>
         </div>
+        {/* mobile navigation bar  */}
         <div className="md:hidden" onClick={toogleMenu}>
           {isMenuOpen ? <ImCross size={30} /> : <TiThMenu size={30} />}
         </div>

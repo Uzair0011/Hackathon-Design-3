@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default function JoinUs() {
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center px-4">
@@ -121,7 +121,7 @@ export default function JoinUs() {
         {/* Sign In Link */}
         <h1 className="text-[12px] text-center">
           <span className="text-[#8D8D8D]">Already a Member?</span>
-          <span className="text-blue-500 cursor-pointer"> Sign in.</span>
+          <span className="text-blue-500 cursor-pointer"> <Link href={"../login"}>Sign in.</Link></span>
         </h1>
       </div>
     </div>

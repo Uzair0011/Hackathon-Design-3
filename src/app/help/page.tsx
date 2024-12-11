@@ -218,7 +218,7 @@ const Help = () => {
               width={35}
               height={45}
             />
-            <p className="text-[16px] font-medium">We'll reply within</p>
+            <p className="text-[16px] font-medium">{`We'll`} reply within</p>
             <p className="text-[16px]">five business days</p>
           </div>
           {/* location */}
