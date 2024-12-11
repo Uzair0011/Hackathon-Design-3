@@ -1,39 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-type Idata = {
-  id: number;
-  title: string;
-  gender: string;
-  price: string;
-  imageURL: string;
-};
-const data: Idata[] = [
-  {
-    id: 1,
-    title: "Nike Air Max Pulse",
-    gender: "Women's Shoes",
-    price: "13,995",
-    imageURL: "s1",
-  },
-  {
-    id: 2,
-    title: "Nike Air Max Pulse",
-    gender: "Men's Shoes",
-    price: "13,995",
-    imageURL: "s2",
-  },
-  {
-    id: 3,
-    title: "Nike Air Max Pulse",
-    gender: "Men's Shoes",
-    price: "13,995",
-    imageURL: "s3",
-  },
-];
-
+import { data } from "../data/bestOfAirMaxData";
 export default function BestOfAirMax() {
   return (
-    <div id="Air" className="h-auto flex flex-col items-center justify-between px-4 sm:px-6 py-8 sm:py-11">
+    <div
+      id="Air"
+      className="h-auto flex flex-col items-center justify-between px-4 sm:px-6 py-8 sm:py-11"
+    >
       {/* Header Section */}
       <div className="w-full mb-6">
         <div className="flex justify-between items-center">
@@ -60,13 +33,14 @@ export default function BestOfAirMax() {
             {/* Image */}
             <div className="w-full h-[300px] flex items-center justify-center bg-gray-100 hover:scale-90 cursor-pointer">
               <Link href="/Detail">
-              <Image
-                src={`/${item.imageURL}.png`}
-                alt={item.title}
-                width={1000}
-                height={1000}
-                className="object-contain"
-              /></Link>
+                <Image
+                  src={`/${item.imageURL}.png`}
+                  alt={item.title}
+                  width={1000}
+                  height={1000}
+                  className="object-contain"
+                />
+              </Link>
             </div>
 
             {/* Text */}
