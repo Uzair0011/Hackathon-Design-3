@@ -47,12 +47,16 @@ export default function Navbar() {
         {/* Search */}
         <div className="hidden lg:flex w-[160px] h-[40px] bg-primary rounded-full items-center pl-2">
           <Image src="/search.png" alt="search icon" width={24} height={24} />
-          <p className="text-[#CCCCCC] text-sm">Search</p>
+          <p className="text-[#CCCCCC] text-sm">
+            <input className="w-[120px] h-[40px] bg-primary" type="text" placeholder="Search" />
+          </p>
         </div>
 
         {/* Icons */}
         <div>
+          <Link href={""}>
           <Image src="/heart.png" alt="wishlist icon" width={24} height={24} />
+          </Link>
         </div>
         <div>
           <Link href={"/cart"}>
