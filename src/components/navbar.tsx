@@ -47,7 +47,6 @@ export default function Navbar() {
             placeholder="Search"
           />
         </div>
-
         {/* Icons */}
         <div>
           <Link href={""}>
@@ -66,7 +65,9 @@ export default function Navbar() {
           </Link>
         </div>
         {/* mobile navigation bar  */}
-        <SheetDemo />
+        <div className=" md:hidden">
+          <SheetDemo />
+        </div>{" "}
       </div>
     </div>
   );
