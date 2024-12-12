@@ -15,7 +15,9 @@ export default function FooterBottom() {
             {" "}
             <Image src="/c.png" alt="logo" width={18} height={18} />
           </div>{" "}
-          <h1>2024 Nike, Inc. Developed by Uzair Ahmed</h1>
+          <h1>
+            2024 Nike, Inc. <span>Developed by Uzair Ahmed</span>
+          </h1>
         </div>
       </div>
       <ul className="w-[368px] h-[auto] flex flex-col sm:flex-row items-center justify-between text-[11px]">
