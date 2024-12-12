@@ -1,15 +1,10 @@
 "use client";
 import Image from "next/image";
-import { TiThMenu } from "react-icons/ti";
 import Link from "next/link";
-import { useState } from "react";
-import { ImCross } from "react-icons/im";
+
+import { SheetDemo } from "./sheets";
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toogleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
   return (
     <div className="w-full bg-white flex items-center justify-between px-4 sm:px-6 py-4 sm:py-6">
       {/* Logo */}
@@ -53,7 +48,6 @@ export default function Navbar() {
             placeholder="Search"
           />
         </div>
-
         {/* Icons */}
         <div>
           <Link href={""}>
@@ -71,46 +65,9 @@ export default function Navbar() {
             <Image src="/cart.png" alt="cart icon" width={24} height={24} />
           </Link>
         </div>
-        {/* mobile navigation bar  */}
-        <div className="md:hidden" onClick={toogleMenu}>
-          {isMenuOpen ? <ImCross size={30} /> : <TiThMenu size={30} />}
-        </div>
-        {isMenuOpen && (
-          <ul className="w-screen h-screen top-[70px] right-[10%] fixed z-10 p-3 rounded pl-20 pt-5 bg-white opacity-85 md:hidden">
-            <li className="pb-10 pl-3 font-bold text-1xl">
-              <a href="/" onClick={toogleMenu}>
-                New & Featured
-              </a>
-            </li>
-
-            <li className="pb-10 pl-3 font-bold text-1xl">
-              <a href="#About" onClick={toogleMenu}>
-                Men
-              </a>
-            </li>
-
-            <li className="pb-10 pl-3 font-bold text-1xl">
-              <a href="#Contact" onClick={toogleMenu}>
-                Women
-              </a>
-            </li>
-            <li className="pb-10 pl-3 font-bold text-1xl">
-              <a href="#Contact" onClick={toogleMenu}>
-                Kids
-              </a>
-            </li>
-            <li className="pb-10 pl-3 font-bold text-1xl">
-              <a href="#Contact" onClick={toogleMenu}>
-                Sale
-              </a>
-            </li>
-            <li className="pb-10 pl-3 font-bold text-1xl">
-              <a href="#Contact" onClick={toogleMenu}>
-                SNKRS
-              </a>
-            </li>
-          </ul>
-        )}
+        <div className=" md:hidden">
+          <SheetDemo />
+        </div>{" "}
       </div>
     </div>
   );
