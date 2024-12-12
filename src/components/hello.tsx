@@ -4,7 +4,7 @@ export default function Hello() {
   return (
     <div>
       {/* Header Section */}
-      <div className="w-full h-auto bg-primaryUzairColor flex flex-col items-center justify-center p-4 sm:p-6 text-center">
+      <div className="w-full h-auto bg-myColor flex flex-col items-center justify-center p-4 sm:p-6 text-center ">
         <h3 className="text-[15px] sm:text-[18px] font-medium">
           Hello Nike App
         </h3>
