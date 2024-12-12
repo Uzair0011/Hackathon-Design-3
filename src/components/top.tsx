@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Top() {
   return (
-    <div className="w-full h-auto sm:h-[36px] bg-primaryUzairColor flex justify-between items-center font-sans font-normal px-4 sm:px-6">
+    <div className="w-full h-auto sm:h-[36px] bg-primary flex justify-between items-center font-sans font-normal px-4 sm:px-6">
       {/* Logo */}
       <div>
         <Image src="/man.png" alt="logo" width={24} height={24} />
