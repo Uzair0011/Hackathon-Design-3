@@ -5,7 +5,7 @@ export default function Cart() {
       {/* left  */}
       <div className="md:w-[60%] ">
         {/* free deliver  */}
-        <div className="w-full bg-primaryUzairColor py-2 ">
+        <div className="w-full bg-primary py-2 ">
           <p className="text-[13px]">Free Delivery</p>
           <div className="text-[11px]">
             <span>Applies to orders of ₹ 14 000.00 or more.</span>{" "}
