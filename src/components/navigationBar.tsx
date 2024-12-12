@@ -4,10 +4,8 @@ import { TiThMenu } from "react-icons/ti";
 
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
