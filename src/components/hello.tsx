@@ -5,10 +5,13 @@ export default function Hello() {
     <div>
       {/* Header Section */}
       <div className="w-full h-auto bg-myColor flex flex-col items-center justify-center p-4 sm:p-6 text-center ">
-        <h3 className="text-[15px] sm:text-[18px] font-medium">
+        <h3
+          data-aos="flip-up"
+          className="text-[15px] sm:text-[18px] font-medium"
+        >
           Hello Nike App
         </h3>
-        <div className="text-[14px] sm:text-[16px] mt-2">
+        <div data-aos="fade-up" className="text-[14px] sm:text-[16px] mt-2">
           Download the app to access everything Nike.{" "}
           <button className="text-blue-500">
             <u>Get Your Great</u>
@@ -30,11 +33,19 @@ export default function Hello() {
       {/* Text and Buttons Section */}
       <div className="w-full h-auto flex items-center py-6 sm:py-12">
         <div className="w-full flex flex-col items-center text-center px-4 sm:px-6">
-          <p className="text-[15px] sm:text-[18px] font-medium">First Look</p>
+          <p
+            data-aos="flip-down"
+            className="text-[15px] sm:text-[18px] font-medium"
+          >
+            First Look
+          </p>
           <h1 className="text-[32px] sm:text-[56px] font-medium leading-tight">
             Nike Air Max Pulse
           </h1>
-          <p className="w-full sm:w-[511px] text-[14px] sm:text-[15px] mt-4">
+          <p
+            data-aos="flip-down"
+            className="w-full sm:w-[511px] text-[14px] sm:text-[15px] mt-4"
+          >
             Extreme comfort. Hyper durable. Max volume. Introducing the Air Max
             Pulse —designed to push you past your limits and help you go to the
             max.
@@ -44,7 +55,7 @@ export default function Hello() {
               Notify Me
             </button>
             <Link href="#Air">
-              <button  className="w-[120px] h-[40px] bg-black text-white rounded-full text-sm">
+              <button className="w-[120px] h-[40px] bg-black text-white rounded-full text-sm">
                 Shop Air Max
               </button>
             </Link>

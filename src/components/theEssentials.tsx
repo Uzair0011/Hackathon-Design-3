@@ -3,7 +3,9 @@ export default function TheEssentials() {
   return (
     <div className="px-4 py-6">
       {/* Heading */}
-      <h1 className="text-[23px] font-medium pb-5">The Essentials</h1>
+      <h1
+      data-aos="fade-left"
+       className="text-[23px] font-medium pb-5">The Essentials</h1>
 
       {/* Cards Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

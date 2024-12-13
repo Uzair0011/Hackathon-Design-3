@@ -4,7 +4,9 @@ export default function DontMiss() {
   return (
     <div className="px-4 py-6">
       {/* Heading */}
-      <h1 className="text-[22px] font-medium mb-4">Don&apos;t Miss</h1>
+      <h1
+      data-aos="fade-left"
+      className="text-[22px] font-medium mb-4">Don&apos;t Miss</h1>
 
       {/* Images Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

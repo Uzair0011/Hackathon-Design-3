@@ -4,7 +4,10 @@ export default function Features() {
   return (
     <div className="px-4 sm:px-6 py-6">
       {/* Featured Header */}
-      <div className="text-[20px] sm:text-[23px] font-medium mb-4 text-center sm:text-left">
+      <div
+        data-aos="fade-left"
+        className="text-[20px] sm:text-[23px] font-medium mb-4  sm:text-left"
+      >
         Featured
       </div>
 
@@ -29,9 +32,10 @@ export default function Features() {
           pair.
         </p>
         <Link href="/AllProducts">
-        <button className="w-[130px] sm:w-[152px] h-[39px] bg-black text-white text-sm sm:text-base rounded-full">
-          Find Your Shoe
-        </button></Link>
+          <button className="w-[130px] sm:w-[152px] h-[39px] bg-black text-white text-sm sm:text-base rounded-full">
+            Find Your Shoe
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -11,7 +11,9 @@ export default function BestOfAirMax() {
       <div className="w-full mb-6">
         <div className="flex justify-between items-center">
           {/* Left */}
-          <h3 className="text-[20px] sm:text-[22px] font-medium">
+          <h3
+          data-aos="fade-left"
+           className="text-[20px] sm:text-[22px] font-medium">
             Best of Air Max
           </h3>
 
