@@ -179,14 +179,14 @@ export default function AllProducts() {
           <div className="h-auto flex flex-col items-center justify-between px-4 sm:px-6 py-8 sm:py-11">
             {/* Cards Section */}
             <div className="w-full flex flex-wrap justify-center sm:justify-between gap-4">
-              {data.map((item, index) => (
+              {data.map((item) => (
                 <div
-                  key={index}
+                  key={item.id}
                   className="w-[280px]  sm:w-[300px] md:w-[350px] flex flex-col items-center    overflow-hidden mx-2 my-4"
                 >
                   {/* Image */}
                   <div className="w-full h-[340px] flex items-center justify-center bg-gray-100 hover:scale-90 cursor-pointer">
-                    <Link href="/Detail">
+                    <Link href={`/AllProducts/${item.id}`}>
                       <Image
                         src={`/${item.imageURL}.png`}
                         alt={item.title}

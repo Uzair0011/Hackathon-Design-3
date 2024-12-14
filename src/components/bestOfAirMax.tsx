@@ -34,7 +34,7 @@ export default function BestOfAirMax() {
           >
             {/* Image */}
             <div className="w-full h-[300px] flex items-center justify-center bg-gray-100 hover:scale-90 cursor-pointer">
-              <Link href="/Detail">
+              <Link href="/detail">
                 <Image
                   src={`/${item.imageURL}.png`}
                   alt={item.title}
