@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { data } from "../data/bestOfAirMaxData";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // loader
+
 export default function BestOfAirMax() {
   return (
     <div
@@ -12,8 +15,9 @@ export default function BestOfAirMax() {
         <div className="flex justify-between items-center">
           {/* Left */}
           <h3
-          data-aos="fade-left"
-           className="text-[20px] sm:text-[22px] font-medium">
+            data-aos="fade-left"
+            className="text-[20px] sm:text-[22px] font-medium"
+          >
             Best of Air Max
           </h3>
 

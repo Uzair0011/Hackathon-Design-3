@@ -8,7 +8,7 @@ export default function FooterBottom() {
             {" "}
             <Image src="/f4.png" alt="logo" width={18} height={15} />
           </div>{" "}
-          <p>India</p>
+          <p>Pakistan</p>
         </div>
         <div className="flex flex-wrap justify-center items-center text-center sm:text-start gap-2">
           <div>

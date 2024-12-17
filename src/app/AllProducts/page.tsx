@@ -1,7 +1,21 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { data } from "../../data/allProductData";
+import React, { useState } from "react";
+
 export default function AllProducts() {
+  const [showButton, setShowButton] = useState(true);
+  const toggleButton = () => {
+    setShowButton(!showButton);}
+    const [showButton2, setShowButton2] = useState(true);
+    const toggleButton2 = () => {
+      setShowButton2(!showButton2);
+  };
+  const [showButton3, setShowButton3] = useState(true);
+  const toggleButton3 = () => {
+    setShowButton3(!showButton3);
+};
   return (
     <div className="px-6">
       <div className="w-full h-auto  flex justify-between ">
@@ -82,75 +96,24 @@ export default function AllProducts() {
 
           <div className="flex justify-between items-center pt-11">
             <div className="font-bold">Gender</div>
-            <div>
-              <Image src="/AA.png" alt="arrow" width={15} height={15} />
-            </div>
-          </div>
-          <ul className=" py-5">
-            {["Male", "Women", "Unisex"].map((item, index) => (
-              <li
-                key={index}
-                className="flex justify-between items-center text-slate-600 leading-loose hover:cursor-pointer hover:underline  "
-              >
-                <div>
-                  <input
-                    className="hover:cursor-pointer"
-                    type="checkbox"
-                    id="men"
-                    name="options"
-                    value="men"
-                  />
-                  <label htmlFor="item" className="pl-2">
-                    {item}
-                  </label>
-                </div>
-              </li>
-            ))}
-          </ul>
-          <br />
-          <hr />
-          {/* Kids  */}
 
-          <div className="flex justify-between items-center pt-11">
-            <div className="font-bold">Kids</div>
-            <div>
-              <Image src="/AA.png" alt="arrow" width={15} height={15} />
-            </div>
+            <button onClick={toggleButton}>
+              {showButton ? (
+                <Image src="/AA.png" alt="arrow" width={15} height={15} />
+              ) : (
+                <Image
+                  className="rotate-180 "
+                  src="/AA.png"
+                  alt="arrow"
+                  width={15}
+                  height={15}
+                />
+              )}
+            </button>
           </div>
-          <ul className=" py-5">
-            {["Boys", "Girls"].map((item, index) => (
-              <li
-                key={index}
-                className="flex justify-between items-center text-slate-600 leading-loose hover:cursor-pointer hover:underline  "
-              >
-                <div>
-                  <input
-                    className="hover:cursor-pointer"
-                    type="checkbox"
-                    id="men"
-                    name="options"
-                    value="men"
-                  />
-                  <label htmlFor="item" className="pl-2">
-                    {item}
-                  </label>
-                </div>
-              </li>
-            ))}
-          </ul>
-          <br />
-          <hr />
-          {/* Shop  */}
-
-          <div className="flex justify-between items-center pt-11">
-            <div className="font-bold">Gender</div>
-            <div>
-              <Image src="/AA.png" alt="arrow" width={15} height={15} />
-            </div>
-          </div>
-          <ul className=" py-5">
-            {["Under ₹ 2 500.00", "₹ 2 501.00 - ₹ 7 500.00"].map(
-              (item, index) => (
+          {showButton && (
+            <ul className=" py-5">
+              {["Male", "Women", "Unisex"].map((item, index) => (
                 <li
                   key={index}
                   className="flex justify-between items-center text-slate-600 leading-loose hover:cursor-pointer hover:underline  "
@@ -168,9 +131,98 @@ export default function AllProducts() {
                     </label>
                   </div>
                 </li>
-              )
-            )}
-          </ul>
+              ))}
+            </ul>
+          )}
+
+          <br />
+          <hr />
+          {/* Kids  */}
+
+          <div className="flex justify-between items-center pt-11">
+            <div className="font-bold">Kids</div>
+            <button onClick={toggleButton2}>
+              {showButton2 ? (
+                <Image src="/AA.png" alt="arrow" width={15} height={15} />
+              ) : (
+                <Image
+                  className="rotate-180 "
+                  src="/AA.png"
+                  alt="arrow"
+                  width={15}
+                  height={15}
+                />
+              )}
+            </button>
+          </div>
+          {showButton2 && (
+            <ul className=" py-5">
+              {["Boys", "Girls"].map((item, index) => (
+                <li
+                  key={index}
+                  className="flex justify-between items-center text-slate-600 leading-loose hover:cursor-pointer hover:underline  "
+                >
+                  <div>
+                    <input
+                      className="hover:cursor-pointer"
+                      type="checkbox"
+                      id="men"
+                      name="options"
+                      value="men"
+                    />
+                    <label htmlFor="item" className="pl-2">
+                      {item}
+                    </label>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+          <br />
+          <hr />
+          {/* Shop  */}
+
+          <div className="flex justify-between items-center pt-11">
+            <div className="font-bold">Shop By Price</div>
+            <button onClick={toggleButton3}>
+              {showButton3 ? (
+                <Image src="/AA.png" alt="arrow" width={15} height={15} />
+              ) : (
+                <Image
+                  className="rotate-180 "
+                  src="/AA.png"
+                  alt="arrow"
+                  width={15}
+                  height={15}
+                />
+              )}
+            </button>
+          </div>
+          {showButton3 && (
+            <ul className=" py-5">
+              {["Under ₹ 2 500.00", "₹ 2 501.00 - ₹ 7 500.00"].map(
+                (item, index) => (
+                  <li
+                    key={index}
+                    className="flex justify-between items-center text-slate-600 leading-loose hover:cursor-pointer hover:underline  "
+                  >
+                    <div>
+                      <input
+                        className="hover:cursor-pointer"
+                        type="checkbox"
+                        id="men"
+                        name="options"
+                        value="men"
+                      />
+                      <label htmlFor="item" className="pl-2">
+                        {item}
+                      </label>
+                    </div>
+                  </li>
+                )
+              )}
+            </ul>
+          )}
         </div>
 
         {/* right side bar  */}
@@ -206,13 +258,52 @@ export default function AllProducts() {
                     <h3 className="text-[14px] text-gray-600">{item.type}</h3>
                     <h3 className="text-[14px] text-gray-600">{item.typeC}</h3>
                     <h3 className="text-[16px] font-bold mt-1">
-                      ₹{item.price}
+                      MRP: ₹{item.price}
                     </h3>
                   </div>
                 </div>
               ))}
             </div>
           </div>
+          <hr />
+          <br />
+          <h1 className="text-[19px] font-medium">Related Categories</h1>
+          <br />
+          {/* Second last Bottom text button  */}
+          <div>
+            <button className="border py-2 px-5 rounded-full m-2 hover:text-white hover:bg-black">
+              Best Selling Products
+            </button>
+            <button className="border py-2 px-5 rounded-full m-2 hover:text-white hover:bg-black">
+              New Basketball Shoes
+            </button>
+            <button className="border py-2 px-5 rounded-full m-2 hover:text-white hover:bg-black">
+              Best Shoes
+            </button>
+            <button className="border py-2 px-5 rounded-full m-2 hover:text-white hover:bg-black">
+              New Football Shoes
+            </button>
+            <button className="border py-2 px-5 rounded-full m-2 hover:text-white hover:bg-black">
+              New Men&apos;s Shoes
+            </button>
+            <button className="border py-2 px-5 rounded-full m-2 hover:text-white hover:bg-black">
+              New Running Shoes
+            </button>
+            <button className="border py-2 px-5 rounded-full m-2 hover:text-white hover:bg-black">
+              Best Men&apos;s Shoes
+            </button>
+            <button className="border py-2 px-5 rounded-full m-2 hover:text-white hover:bg-black">
+              New Jordan Shoes
+            </button>
+            <button className="border py-2 px-5 rounded-full m-2 hover:text-white hover:bg-black">
+              Best Women&apos;s Shoes
+            </button>
+            <button className="border py-2 px-5 rounded-full m-2 hover:text-white hover:bg-black">
+              Best Training & Gym
+            </button>
+          </div>
+          <br />
+          <br />
         </div>
       </div>
     </div>

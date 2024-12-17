@@ -45,16 +45,16 @@ export default function Footer() {
 
         {/* logo  */}
         <div className="w-full sm:w-[177px] h-[auto]  flex  justify-between py-5 sm:py-0">
-          <div className="w-[30px] h-[30px]">
+          <div className="w-[30px] h-[30px] hover:bg-white hover:cursor-pointer hover:rounded-full hover:bg-blend-multiply">
             <Image src="/f1.png" alt="logo" width={30} height={30} />
           </div>
-          <div className="w-[30px] h-[30px]">
+          <div className="w-[30px] h-[30px] hover:bg-white hover:cursor-pointer hover:rounded-full hover:bg-blend-multiply">
             <Image src="/f2.png" alt="logo" width={30} height={30} />
           </div>
-          <div className="w-[30px] h-[30px]">
+          <div className="w-[30px] h-[30px] hover:bg-white hover:cursor-pointer hover:rounded-full hover:bg-blend-multiply">
             <Image src="/f3.png" alt="logo" width={30} height={30} />
           </div>
-          <div className="w-[30px] h-[30px]">
+          <div className="w-[30px] h-[30px] hover:bg-white hover:cursor-pointer hover:rounded-full hover:bg-blend-multiply">
             <Image src="/f4.png" alt="logo" width={30} height={30} />
           </div>
         </div>

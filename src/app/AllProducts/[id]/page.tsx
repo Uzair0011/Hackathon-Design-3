@@ -11,7 +11,7 @@ export default function ProductDetail({ params }: Params) {
   const { id } = params;
 
   // Find the specific product by id
-  const product = data.find((item) => item.id === id);
+  const product = data.find((item) => (item.id === id));
 
   // If product not found, show a message
   if (!product) {
@@ -19,7 +19,7 @@ export default function ProductDetail({ params }: Params) {
   }
 
   return (
-    <div className="w-full h-auto md:h-[790px] flex flex-col md:flex-row justify-between items-center">
+    <div className="w-full h-auto md:h-[790px] flex flex-col md:flex-row justify-between items-center px-6">
       {/* Left Section */}
       <div className="w-full md:w-[50%] h-[653px]">
         <Image
@@ -31,7 +31,7 @@ export default function ProductDetail({ params }: Params) {
       </div>
 
       {/* Right Section */}
-      <div className="w-[50%] h-auto md:h-[653px] flex flex-col text-center md:text-start items-center py-6 md:py-0">
+      <div className="w-[50%] h-auto md:h-[653px] flex flex-col text-center md:text-start items-center  py-6 md:py-0">
         <div className="w-[373px] h-auto flex flex-col items-center md:items-start">
           {/* Title and Price */}
           <h1 className="text-[48px] font-medium">
@@ -51,12 +51,13 @@ export default function ProductDetail({ params }: Params) {
           </p>
 
           {/* Add to Cart Button */}
-          <button className="w-[175px] h-[44px] bg-black flex items-center justify-center gap-2 text-white rounded-full mt-5">
+          <button className="w-[175px] h-[44px] bg-black flex items-center justify-center gap-2 text-white rounded-full mt-5 ">
             <Image src="/buy.png" alt="Buy" width={29} height={20} />
             Add To Cart
           </button>
         </div>
       </div>
+
     </div>
   );
 }
