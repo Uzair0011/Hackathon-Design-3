@@ -34,10 +34,10 @@ export default function BestOfAirMax() {
         {data.map((item, index) => (
           <div
             key={index}
-            className="w-[280px] sm:w-[300px] md:w-[350px] flex flex-col items-center overflow-hidden mx-2 my-4"
+            className="w-[280px] sm:w-[300px] md:w-[290px] flex flex-col items-center overflow-hidden mx-2 my-4"
           >
             {/* Image */}
-            <div className="w-full h-[300px] flex items-center justify-center bg-gray-100 hover:scale-90 cursor-pointer">
+            <div className="w-full h-[270px] flex items-center justify-center bg-gray-100 hover:scale-90 duration-500 cursor-pointer">
               <Link href="/detail">
                 <Image
                   src={`/${item.imageURL}.png`}

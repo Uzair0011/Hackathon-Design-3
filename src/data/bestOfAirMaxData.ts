@@ -18,7 +18,7 @@ export const data: Idata[] = [
     title: "Nike Air Max Pulse",
     gender: "Men's Shoes",
     price: "13,995",
-    imageURL: "s2",
+    imageURL: "a2",
   },
   {
     id: 3,
@@ -26,5 +26,12 @@ export const data: Idata[] = [
     gender: "Men's Shoes",
     price: "13,995",
     imageURL: "s3",
+  },
+  {
+    id: 4,
+    title: "Nike Air Max Pulse",
+    gender: "Men's Shoes",
+    price: "13,995",
+    imageURL: "a3",
   },
 ];

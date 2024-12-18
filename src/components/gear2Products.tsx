@@ -5,7 +5,7 @@ export default function Gear2Products() {
   return (
     <div>
     {/* arrow  */}
-    <div className="w-[100%]  flex  justify-end gap-5">
+    <div className="w-[97%]  flex  justify-end gap-5">
       <div>
         <Image src="/LA.png" alt="logo" width={46} height={46} />
       </div>
@@ -15,11 +15,11 @@ export default function Gear2Products() {
     </div>
 
     {/* Column 1 */}
-    <div className="w-[100%] place-items-center   grid  md:grid-cols-2  px-3 gap-5 ">
+    <div className="w-[100%] place-items-center   grid  md:grid-cols-2  px-3 gap-11 ">
       {data.map((Idata, index) => (
         <div key={index} className="  w-[267px] h-[400px] px-3 pt-5">
           {/* Image */}
-          <div className="w-full h-auto flex items-center justify-center mb-4 hover:scale-90 cursor-pointer">
+          <div className="w-full h-auto flex items-center justify-center mb-4 hover:scale-90 duration-500 cursor-pointer">
             <Image
               src={`/${Idata.imageURL}.png`}
               alt="logo"

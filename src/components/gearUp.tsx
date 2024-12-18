@@ -13,7 +13,7 @@ export default function GearUp() {
         </h3>
       </div>
 
-      <div className=" lg:flex ">
+      <div className=" lg:flex justify-between gap-6">
         {" "}
         {/* card  */}
         <Gear1Products />
